@@ -1,0 +1,56 @@
+name: Daily Google Play ranking
+
+on:
+  schedule:
+    # Runs every day at 5:00 PM IST. GitHub cron is always UTC.
+    # 17:00 IST = 11:30 UTC  (IST = UTC+5:30). Edit here to change the time.
+    - cron: "30 11 * * *"
+  workflow_dispatch: {}   # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write   # lets the job commit history.csv back to the repo
+
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    env:
+      # ---- Secret: set in repo Settings -> Secrets and variables -> Actions ----
+      WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+
+      # ---- Everything below is safe to edit right here ----
+      WEBHOOK_TYPE:  "auto"        # auto | slack | discord | generic | seatalk
+      # Charts to post: comma-separated "COLLECTION:CATEGORY" pairs, each its own section.
+      # COLLECTION = TOP_FREE | TOP_PAID | GROSSING ; CATEGORY = GAME (all) or e.g. GAME_ACTION
+      CHARTS:        "TOP_FREE:GAME,GROSSING:GAME"
+      COUNTRY:       "in"          # store country: us, id, in, br, ...
+      LANG_:         "en"
+      TOP_N:         "10"          # how many chart entries to post per section
+      RANK_DEPTH:    "200"         # how deep to search when locating TRACK_APPS
+      # Comma-separated package IDs to report the rank of (optional):
+      TRACK_APPS:    ""            # e.g. "com.dts.freefiremax,com.pubg.imobile"
+      # ---- History log ----
+      HISTORY_FILE:  "history.csv" # "" to disable; committed back after each run
+      HISTORY_DEPTH: "25"          # top N per category recorded to CSV
+      TZ_OFFSET:     "+05:30"      # India Standard Time (no DST)
+      TZ_LABEL:      "IST"
+
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      # No pip install needed — main.py uses only the Python standard library.
+      - name: Fetch ranking, send to webhook, log history
+        run: python main.py
+
+      - name: Commit history.csv
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add history.csv
+          if git diff --cached --quiet; then
+            echo "No history changes to commit."
+          else
+            git commit -m "ranking history: $(date -u +%Y-%m-%d)"
+            git push
+          fi
