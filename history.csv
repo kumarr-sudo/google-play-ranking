@@ -1849,3 +1849,53 @@ run_at,date,time,country,collection,category,rank,prev_rank,change,app_id,title,
 2026-08-30 20:54:12 IST,2026-08-30,20:54,IN,GROSSING,GAME,23,23,0,com.miniclip.eightballpool,8 Ball Pool,4.7,Miniclip.com
 2026-08-30 20:54:12 IST,2026-08-30,20:54,IN,GROSSING,GAME,24,25,+1,com.yalla.yallagames,Yalla Ludo - Ludo&Jackaroo,3.69,Aviva Sun
 2026-08-30 20:54:12 IST,2026-08-30,20:54,IN,GROSSING,GAME,25,24,-1,com.gof.global,Whiteout Survival,4.1,Century Games PTE. LTD.
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,1,1,0,com.ludo.king,Ludo King®,3.98,Gametion
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,2,2,0,com.dts.freefiremax,Free Fire MAX,4.32,GARENA INTERNATIONAL I
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,3,3,0,com.easybrain.arrow.puzzle.game,Arrow Puzzle: Tap Puzzle Games,4.56,Easybrain
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,4,5,+1,com.Rohit.IndianBikes,Indian Bikes Driving 3D,4.14,Rohit Gaming Studio
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,5,8,+3,io.supercent.pizzaidle,Pizza Ready!,4.15,"Supercent, Inc."
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,6,4,-2,com.levelinfinite.gst,Gangstar Mirage City: Online,4.58,Level Infinite
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,7,6,-1,com.ta.strike.ops,FPS Strike Ops : Modern Arena,4.18,FPS Shooter & Action Game
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,8,7,-1,com.miniclip.carrom,Carrom Pool: Disc Game,4.58,Miniclip.com
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,9,11,+2,com.cdg.tictactoe,Tic Tac Toe - 2 Player XO,3.53,CDT Puzzle Studio
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,10,9,-1,com.kiloo.subwaysurf,Subway Surfers,4.41,SYBO Games
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,11,20,+9,io.voodoo.holeio,Hole.io,3.87,VOODOO
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,12,12,0,com.JindoBlu.FourPlayers,1 2 3 4 Player Games - Offline,4.32,JindoBlu
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,13,,NEW,com.Skorax.GangsterCrimeCity,Super Street Legends,4.09,TGamevn
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,14,10,-4,com.rioo.runnersubway,Subway Princess Runner,3.99,Ivy
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,15,13,-2,com.roblox.client,Roblox,4.66,Roblox Corporation
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,16,25,+9,com.dvloper.granny,Granny,4.06,DVloper
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,17,15,-2,io.voodoo.paper2,Paper.io 2,4.27,VOODOO
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,18,14,-4,com.ANGamingStudio.IndianVehiclesSimulator3d,Indian Vehicles Simulator 3d,4.23,AN Gaming Studio
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,19,,NEW,piano.game.music.beat.tiles,Piano Beat: Music Game,4.32,Dream Tiles Piano Game Studio
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,20,22,+2,com.highbrowinteractive.truck.masters.india.highway.driving.simulator.game,Truck Masters: India Simulator,4.36,Highbrow Interactive
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,21,16,-5,com.rubygames.assassin,Hunter Assassin,4.07,Ruby Games AS
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,22,18,-4,com.block.juggle,Block Blast!,4.64,HungryStudio
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,23,,NEW,gridplus.busjam.carpuzzle,Bus Fever! Car Jam Escape,4.5,Lumi Games
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,24,17,-7,com.snake.io.slither.worms,Snake Lite® - Worm Snake Game,3.93,Hippo Lab
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,TOP_FREE,GAME,25,,NEW,com.pubg.imobile,BGMI: FPS Battle Royale,4.39,"KRAFTON, Inc."
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,1,1,0,com.dts.freefiremax,Free Fire MAX,4.32,GARENA INTERNATIONAL I
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,2,2,0,com.pubg.imobile,BGMI: FPS Battle Royale,4.39,"KRAFTON, Inc."
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,3,4,+1,com.moonactive.coinmaster,Coin Master,4.58,Moon Active
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,4,5,+1,com.king.candycrushsaga,Candy Crush Saga,4.44,King
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,5,6,+1,com.roblox.client,Roblox,4.66,Roblox Corporation
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,6,3,-3,jp.konami.pesam,eFootball™,4.49,KONAMI
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,7,7,0,com.monopoly.dream.idle.king,Top Tycoon: Coin Theme Empire,4.63,Topzest Games
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,8,8,0,com.ea.gp.fifamobile,EA SPORTS FC Soccer Mobile 26,4.47,ELECTRONIC ARTS
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,9,9,0,com.octro.teenpatti,Octro Teen Patti: 3 Patti Game,4.57,"Octro, Inc."
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,10,10,0,com.run.tower.defense,Kingshot,4.37,Century Games PTE. LTD.
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,11,11,0,com.playrix.gardenscapes,Gardenscapes,4.52,Playrix
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,12,12,0,com.supercell.clashofclans,Clash of Clans,4.5,Supercell
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,13,17,+4,com.nianticlabs.pokemongo,Pokémon GO,4.06,"Scopely Explore, Inc."
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,14,13,-1,com.playrix.township,Township,4.68,Playrix
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,15,14,-1,com.teenpatti.hd.gold,Teen Patti GOLD: 3 Patti Rummy,4.31,Moonfrog
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,16,16,0,com.fatmerge.global,Tasty Travels: Merge Game,4.29,Century Games PTE. LTD.
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,17,18,+1,com.dreamgames.royalmatch,Royal Match,4.44,"Dream Games, Ltd."
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,18,15,-3,io.randomco.travel,Travel Town - Merge Adventure,4.26,Magmatic Games LTD
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,19,21,+2,com.activision.callofduty.shooter,Call of Duty®: Mobile,4.25,"Activision Publishing, Inc."
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,20,19,-1,com.ludo.king,Ludo King®,3.98,Gametion
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,21,20,-1,com.readygo.barrel.gp,Last Z: Survival Shooter,4.26,Omnilojo Pte Ltd
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,22,23,+1,com.miniclip.eightballpool,8 Ball Pool,4.7,Miniclip.com
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,23,22,-1,com.fun.lastwar.gp,Last War:Survival Game,4.48,FUNFLY PTE. LTD.
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,24,25,+1,com.gof.global,Whiteout Survival,4.1,Century Games PTE. LTD.
+2026-08-31 23:33:39 IST,2026-08-31,23:33,IN,GROSSING,GAME,25,24,-1,com.yalla.yallagames,Yalla Ludo - Ludo&Jackaroo,3.69,Aviva Sun
