@@ -70,7 +70,7 @@ TOP_N=5 COLLECTION=GROSSING COUNTRY=id TRACK_APPS="com.dts.freefireth,com.mobile
 | `WEBHOOK_URL` | *(none)* | Where to POST. Unset = print only (diagnostic). |
 | `WEBHOOK_TYPE` | `auto` | `slack` \| `discord` \| `generic` \| `seatalk` \| `auto` (detects from URL). |
 | `CHARTS` | `TOP_FREE:GAME,GROSSING:GAME` | **Google Play** charts: comma-separated `COLLECTION:CATEGORY` pairs; each posts as its own section. COLLECTION = `TOP_FREE`\|`TOP_PAID`\|`GROSSING`; CATEGORY = `GAME` (all) or e.g. `GAME_ACTION`. `""` skips Google Play. |
-| `APPSTORE_CHARTS` | `TOP_FREE:GAME,TOP_PAID:GAME` | **App Store** charts, same format. CATEGORY = `GAME` or `GAME_ACTION`, `GAME_PUZZLE`, `GAME_STRATEGY`, … (or a numeric Apple genre ID). `""` skips the App Store. |
+| `APPSTORE_CHARTS` | `TOP_FREE:GAME,GROSSING:GAME` | **App Store** charts, same format. CATEGORY = `GAME` or `GAME_ACTION`, `GAME_PUZZLE`, `GAME_STRATEGY`, … (or a numeric Apple genre ID). `""` skips the App Store. |
 | `COUNTRY` | `us` | Store country code: `us`, `id`, `in`, `br`, … |
 | `LANG_` | `en` | Language code. (Named `LANG_` so it doesn't clash with the shell's `LANG`.) |
 | `TOP_N` | `10` | How many chart entries to post per section. |
@@ -127,8 +127,8 @@ Each store is sent as its **own message** — first Google Play, then App Store:
    1. Free Fire India ⭐4.14   =
    ...
 
-*Top Paid Games — IN*
-   1. Minecraft: Dream it, Build it! (₹ 40) ⭐4.5   =
+*Top Grossing Games — IN*
+   1. Pokémon GO ⭐3.77   =
    ...
 ```
 
