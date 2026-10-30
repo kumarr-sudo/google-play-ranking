@@ -46,7 +46,7 @@ def _parse_charts(value):
 #   CATEGORY:   GAME (all games), or a sub-category like GAME_ACTION
 # Set to "" to skip that store entirely.
 CHARTS          = _parse_charts(os.environ.get("CHARTS", "TOP_FREE:GAME,GROSSING:GAME"))
-APPSTORE_CHARTS = _parse_charts(os.environ.get("APPSTORE_CHARTS", "TOP_FREE:GAME,TOP_PAID:GAME"))
+APPSTORE_CHARTS = _parse_charts(os.environ.get("APPSTORE_CHARTS", "TOP_FREE:GAME,GROSSING:GAME"))
 COUNTRY      = os.environ.get("COUNTRY", "us").strip().lower()
 LANG         = os.environ.get("LANG_", os.environ.get("LANG", "en")).strip().lower()
 TOP_N        = int(os.environ.get("TOP_N", "10"))
