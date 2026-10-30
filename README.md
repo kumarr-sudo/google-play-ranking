@@ -1,17 +1,22 @@
-# Google Play Ranking → Webhook
+# Google Play + App Store Ranking → Webhook
 
-Fetches a Google Play **top chart** (Top Free / Top Grossing / Top Paid) for a
-category + country every day and posts it to a webhook (Slack, Discord, or any
-custom endpoint). Can also report the **daily rank of specific games** you care
-about.
+Fetches **top charts** (Top Free / Top Grossing / Top Paid) from **Google Play**
+and the **Apple App Store** for a category + country every day and posts them to
+a webhook (Slack, Discord, SeaTalk, or any custom endpoint). Can also report the
+**daily rank of specific games** you care about.
 
 - **Free.** No API key, no paid service.
 - **Serverless.** Runs on **GitHub Actions** — Google runs the schedule for you;
   your PC doesn't need to be on.
 - **No dependencies.** `main.py` uses only the Python standard library.
 
-> Data source: Google Play's own (unofficial) web endpoint — the same one the
-> `google-play-scraper` project uses. See [If it stops working](#if-it-stops-working).
+> Data sources:
+> - **Google Play:** Google's own (unofficial) web endpoint — the same one the
+>   `google-play-scraper` project uses.
+> - **App Store:** Apple's public iTunes RSS top-chart feed (up to 100 per chart),
+>   plus the iTunes Lookup API for star ratings.
+>
+> See [If it stops working](#if-it-stops-working).
 
 ---
 
@@ -19,7 +24,7 @@ about.
 
 | Question | Answer here |
 |---|---|
-| Where's the data? | Google Play top-chart endpoint |
+| Where's the data? | Google Play top-chart endpoint + Apple iTunes RSS feed |
 | What counts as "the ranking"? | Position in a chart (Top Free / Grossing / Paid) for a category + country |
 | What do we send? | Top N of the chart, and/or the rank of specific package IDs |
 | Where does it go? | A webhook URL (Slack / Discord / generic JSON) |
@@ -53,7 +58,7 @@ TOP_N=5 COLLECTION=GROSSING COUNTRY=id TRACK_APPS="com.dts.freefireth,com.mobile
    - Name: `WEBHOOK_URL`  ·  Value: your webhook URL
 3. Edit the config block in [`.github/workflows/daily.yml`](.github/workflows/daily.yml)
    (chart type, country, tracked apps, schedule time).
-4. **Actions** tab → run **“Daily Google Play ranking”** once via *Run workflow*
+4. **Actions** tab → run **“Daily game ranking (Google Play + App Store)”** once via *Run workflow*
    to confirm it posts. After that it runs on the cron schedule automatically.
 
 ---
@@ -64,19 +69,27 @@ TOP_N=5 COLLECTION=GROSSING COUNTRY=id TRACK_APPS="com.dts.freefireth,com.mobile
 |---|---|---|
 | `WEBHOOK_URL` | *(none)* | Where to POST. Unset = print only (diagnostic). |
 | `WEBHOOK_TYPE` | `auto` | `slack` \| `discord` \| `generic` \| `seatalk` \| `auto` (detects from URL). |
-| `CHARTS` | `TOP_FREE:GAME,GROSSING:GAME` | Comma-separated `COLLECTION:CATEGORY` pairs; each posts as its own section. COLLECTION = `TOP_FREE`\|`TOP_PAID`\|`GROSSING`; CATEGORY = `GAME` (all) or e.g. `GAME_ACTION`. |
+| `CHARTS` | `TOP_FREE:GAME,GROSSING:GAME` | **Google Play** charts: comma-separated `COLLECTION:CATEGORY` pairs; each posts as its own section. COLLECTION = `TOP_FREE`\|`TOP_PAID`\|`GROSSING`; CATEGORY = `GAME` (all) or e.g. `GAME_ACTION`. `""` skips Google Play. |
+| `APPSTORE_CHARTS` | `TOP_FREE:GAME,TOP_PAID:GAME` | **App Store** charts, same format. CATEGORY = `GAME` or `GAME_ACTION`, `GAME_PUZZLE`, `GAME_STRATEGY`, … (or a numeric Apple genre ID). `""` skips the App Store. |
 | `COUNTRY` | `us` | Store country code: `us`, `id`, `in`, `br`, … |
 | `LANG_` | `en` | Language code. (Named `LANG_` so it doesn't clash with the shell's `LANG`.) |
 | `TOP_N` | `10` | How many chart entries to post per section. |
-| `RANK_DEPTH` | `200` | How deep to fetch when locating `TRACK_APPS`. |
-| `TRACK_APPS` | *(none)* | Comma-separated package IDs to report the rank of. |
-| `HISTORY_FILE` | `history.csv` | CSV log file; `""` disables history. |
+| `RANK_DEPTH` | `200` | How deep to fetch when locating tracked apps (App Store is capped at 100). |
+| `TRACK_APPS` | *(none)* | Comma-separated Google Play package IDs to report the rank of. |
+| `APPSTORE_TRACK_APPS` | *(none)* | Comma-separated App Store IDs (`6449933265`) or bundle IDs (`com.garena.game.ffi`). |
+| `HISTORY_FILE` | `history.csv` | Google Play CSV log file; `""` disables history. |
+| `APPSTORE_HISTORY_FILE` | `history_appstore.csv` | App Store CSV log file; `""` disables it. |
 | `HISTORY_DEPTH` | `25` | Top N per chart written to the CSV each run. |
 | `TZ_OFFSET` | `+05:30` | Fixed UTC offset for timestamps (India = IST, no DST). |
 | `TZ_LABEL` | `IST` | Label shown next to the timestamp. |
 
 **Finding a package ID:** open the game on Google Play; the URL is
 `play.google.com/store/apps/details?id=<THIS>` — e.g. `com.dts.freefireth`.
+
+**Finding an App Store ID:** open the game on apps.apple.com; the URL ends in
+`/id<THIS>` — e.g. `apps.apple.com/in/app/free-fire-india/id6449933265` → `6449933265`.
+The bundle ID (e.g. `com.garena.game.ffi`) also works, and is logged in the
+`bundle_id` column of `history_appstore.csv`.
 
 ### Payload shapes
 - **Slack:** `{"text": "..."}`
@@ -86,6 +99,8 @@ TOP_N=5 COLLECTION=GROSSING COUNTRY=id TRACK_APPS="com.dts.freefireth,com.mobile
 ---
 
 ## Output example
+
+Each store is sent as its **own message** — first Google Play, then App Store:
 
 ```
 📊 Google Play Rankings — IN
@@ -104,6 +119,24 @@ TOP_N=5 COLLECTION=GROSSING COUNTRY=id TRACK_APPS="com.dts.freefireth,com.mobile
    ...
 ```
 
+```
+📊 App Store Rankings — IN
+🕒 2026-07-24 17:00 IST   (vs previous run:  ▲ up · ▼ down · 🆕 new)
+
+*Top Free Games — IN*
+   1. Free Fire India ⭐4.14   =
+   ...
+
+*Top Paid Games — IN*
+   1. Minecraft: Dream it, Build it! (₹ 40) ⭐4.5   =
+   ...
+```
+
+If one chart fails to fetch (or one message fails to send), the others are still
+posted (with a ⚠️ line for a broken chart) and the run is marked failed so you
+notice it in the Actions tab.
+With Discord, a long post is split into several messages.
+
 **Movement** (`▲` up / `▼` down / `🆕` new / `=` unchanged) is computed by
 comparing each app to its rank in the **previous run**, read from `history.csv`.
 The first ever run has no baseline, so it shows no movement tags.
@@ -113,8 +146,10 @@ The first ever run has no baseline, so it shows no movement tags.
 
 ## History log (Excel-friendly record)
 
-Every run appends the **top 25 of each chart** to `history.csv`, and the
-GitHub Action commits the file back to the repo. Over time you get a full daily
+Every run appends the **top 25 of each chart** to `history.csv` (Google Play)
+and `history_appstore.csv` (App Store), and the GitHub Action commits both back
+to the repo. The App Store file has the same columns, with `app_id` = the
+numeric App Store ID plus an extra `bundle_id` column. Over time you get a full daily
 record you can open directly in Excel / Google Sheets.
 
 Columns:
@@ -163,9 +198,17 @@ npm install google-play-scraper
 The parse paths in `main.py` (`get_chart`) mirror that library's `list.js`; if
 they drift, update them to match.
 
+**App Store:** the chart comes from Apple's iTunes RSS feed
+(`https://itunes.apple.com/<country>/rss/topfreeapplications/limit=100/genre=6014/json`).
+It's public and long-lived, but Apple has deprecated it in favour of
+`rss.marketingtools.apple.com`, which does **not** support a Games-only filter.
+If the old feed ever goes away, `get_appstore_chart` in `main.py` is the one
+function to change.
+
 ---
 
 ## Files
-- `main.py` — fetch, format, send. Stdlib only.
+- `main.py` — fetch (Google Play + App Store), format, send. Stdlib only.
+- `history.csv` / `history_appstore.csv` — the daily ranking logs.
 - `chart_payload.txt` — the (large) request body template for the chart endpoint.
 - `.github/workflows/daily.yml` — the daily schedule + config.
