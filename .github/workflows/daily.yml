@@ -23,7 +23,7 @@ jobs:
       # COLLECTION = TOP_FREE | TOP_PAID | GROSSING ; CATEGORY = GAME (all) or e.g. GAME_ACTION
       # Set either one to "" to skip that store.
       CHARTS:          "TOP_FREE:GAME,GROSSING:GAME"     # Google Play
-      APPSTORE_CHARTS: "TOP_FREE:GAME,TOP_PAID:GAME"     # Apple App Store (max 100 deep)
+      APPSTORE_CHARTS: "TOP_FREE:GAME,GROSSING:GAME"     # Apple App Store (max 100 deep)
       COUNTRY:       "in"          # store country: us, id, in, br, ...
       LANG_:         "en"
       TOP_N:         "10"          # how many chart entries to post per section
