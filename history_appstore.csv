@@ -699,3 +699,53 @@ run_at,date,time,country,collection,category,rank,prev_rank,change,app_id,title,
 2026-11-11 00:14:29 IST,2026-11-11,00:14,IN,GROSSING,GAME,23,,NEW,1498437026,Hitwicket™ x Sachin Tendulkar,4.57,Hitwicket Cricket Games,com.hitwicketgames.cricket
 2026-11-11 00:14:29 IST,2026-11-11,00:14,IN,GROSSING,GAME,24,20,-4,653418482,Teen Patti Octro 3 Patti Rummy,4.56,"Octro, Inc.",com.octro.TeenPatti
 2026-11-11 00:14:29 IST,2026-11-11,00:14,IN,GROSSING,GAME,25,19,-6,1521236603,Travel Town - Merge Adventure,4.52,Moon Active,io.randomco.travel
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,1,1,0,6449933265,Free Fire India,4.15,Garena International III Private Limited,com.garena.game.ffi
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,2,2,0,993090598,Ludo King,3.63,GAMETION GLOBAL TECHNOLOGIES PTE LIMITED,com.gametion.ludo
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,3,3,0,6752672568,Block Out! - Color Sort Puzzle,4.44,Grand Games A.Ş.,com.grandgames.catblockjam
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,4,4,0,1526436837,BATTLEGROUNDS MOBILE INDIA,4.19,KRAFTON Inc,com.pubg.imobile
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,5,5,0,1562817072,Mob Control,4.44,Voodoo,com.vincentb.MobControl
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,6,6,0,431946152,Roblox,4.45,Roblox Corporation,com.roblox.robloxmobile
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,7,8,+1,512939461,Subway Surfers,4.48,Sybo Games ApS,com.kiloo.subwaysurfers
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,8,7,-1,6499209744,Magic Sort!,4.45,Grand Games A.Ş.,com.grandgames.magicsort
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,9,10,+1,6746743297,Bus Fever Party!,4.53,Lumi Games,ios.gridplus.busjam.carpuzzle
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,10,11,+1,553834731,Candy Crush Saga,4.65,King,com.midasplayer.apps.candycrushsaga
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,11,9,-2,6746328263,Castle Busters,4.46,Voodoo,com.epicoro.castleclashers
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,12,13,+1,1423046460,Paper.io 2,4.45,Voodoo,io.voodoo.paper2
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,13,14,+1,6761760135,Meowdoku!,4.71,Oakever Games,com.oakever.meowdoku
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,14,17,+3,6740579527,Kulfi: Games for Couples,4.8,Kulfi,com.kulfi.app
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,15,15,0,6756482832,Brain Puzzle 3: Crazy Mind,4.29,SmallStep Dev Team,com.brain.crazy.joygame.ios
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,16,12,-4,638689075,Township,4.68,Playrix,com.playrix.township-ios
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,17,16,-1,1389111413,Hole.io - Original Hole Game,4.46,Voodoo,com.nguyenvh.holeio
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,18,20,+2,1420551478,Carrom Pool: Disc Game,4.51,Miniclip.com,com.miniclip.carrom
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,19,21,+2,543186831,8 Ball Pool™,4.69,Miniclip.com,com.miniclip.8ballpoolmult
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,20,24,+4,1543976495,Mini Militia Classic,3.96,Chad Towns,com.appsomniacs.mmc
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,21,,NEW,6748397500,Arrows – Puzzle Escape,4.55,Lessmore GmbH,com.ecffri.arrows
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,22,18,-4,6475969303,Truck Masters: India Simulator,4.39,Highbrow Interactive,com.highbrowinteractive.truck.masters.india.highway.driving.simulator.game
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,23,,NEW,6739124364,Top Tycoon: Coin Theme Empire,4.75,Topzest Games Limited,com.monopoly.dream.idle.king
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,24,22,-2,1617391485,Block Blast!,4.77,Hungry Studio,com.blockpuzzle.us.ios
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,TOP_FREE,GAME,25,23,-2,329218549,Chess.com - Play and Learn,4.72,Chess.com,com.chess.iphone
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,1,1,0,1094591345,Pokémon GO,3.77,"Scopely Explore, Inc.",com.nianticlabs.pokemongo
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,2,2,0,1526436837,BATTLEGROUNDS MOBILE INDIA,4.19,KRAFTON Inc,com.pubg.imobile
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,3,6,+3,529479190,Clash of Clans,4.61,Supercell,com.supercell.magic
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,4,3,-1,553834731,Candy Crush Saga,4.65,King,com.midasplayer.apps.candycrushsaga
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,5,8,+3,431946152,Roblox,4.45,Roblox Corporation,com.roblox.robloxmobile
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,6,5,-1,406889139,Coin Master,4.57,Moon Active,com.mobile-softing.coinmaster
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,7,7,0,6739554056,Kingshot,4.44,Century Games Pte. Ltd.,com.run.tower.defense
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,8,4,-4,1117270703,eFootball™,4.28,KONAMI,jp.konami.pesactionmobile
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,9,9,0,1482155847,Royal Match,4.6,Dream Games,com.dreamgames.royalmatch
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,10,10,0,6739124364,Top Tycoon: Coin Theme Empire,4.75,Topzest Games Limited,com.monopoly.dream.idle.king
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,11,12,+1,6471045672,Tasty Travels: Merge Game,4.48,Century Games Pte. Ltd.,com.fatmerge.global
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,12,11,-1,1105855019,Gardenscapes,4.58,Playrix,com.playrix.gardenscapes-m3-ios
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,13,13,0,1094930513,EA SPORTS FC™ Football Mobile,4.53,Electronic Arts,com.ea.ios.fifamobile
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,14,14,0,6449933265,Free Fire India,4.15,Garena International III Private Limited,com.garena.game.ffi
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,15,16,+1,6503272652,Last Z: Survival Shooter,4.58,Omnilojo Pte Ltd,com.readygo.barrel.ios
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,16,17,+1,638689075,Township,4.68,Playrix,com.playrix.township-ios
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,17,18,+1,1606549505,Royal Kingdom,4.58,Dream Games,com.dreamgames.royalkingdom
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,18,15,-3,1098157959,Evony,3.96,TOP GAMES INC.,com.topgamesinc.evony
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,19,24,+5,653418482,Teen Patti Octro 3 Patti Rummy,4.56,"Octro, Inc.",com.octro.TeenPatti
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,20,19,-1,6670476964,Moba Legends: 5v5,3.68,VIZTA PTE. LTD.,com.mobiin.gp
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,21,,NEW,1274132545,Total Battle: Strategy Games,4.49,Scorewarrior,com.totalbattle
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,22,,NEW,354902315,Zynga Poker: Texas Holdem Game,4.45,Zynga Inc.,com.zynga.livepoker.700
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,23,21,-2,1195621598,Homescapes,4.53,Playrix,com.playrix.gardenscapes-sweethome
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,24,25,+1,1521236603,Travel Town - Merge Adventure,4.52,Moon Active,io.randomco.travel
+2026-11-12 00:18:52 IST,2026-11-12,00:18,IN,GROSSING,GAME,25,22,-3,329218549,Chess.com - Play and Learn,4.72,Chess.com,com.chess.iphone
